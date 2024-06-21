@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         MovementControl();
     }
 
-    private float m_xRotation = 90f;
+    private float m_xRotation = -90f;
 
     private void MouseControl()
     {
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * m_mouseSensitivity;
 
         m_xRotation -= mouseY;
-        m_xRotation = Mathf.Clamp(m_xRotation, 0, 180f);
+        m_xRotation = Mathf.Clamp(m_xRotation, -90f, 90f);
 
         m_cameraTF.localRotation = Quaternion.Euler(m_xRotation, 0f, 0f);
         m_playerTF.Rotate(Vector3.up * mouseX);
@@ -42,9 +42,9 @@ public class PlayerMovement : MonoBehaviour
     private void MovementControl()
     {
         float movementX = Input.GetAxisRaw("Horizontal");
-        float movementZ = Input.GetAxisRaw("Vertical");
+        float movementY = Input.GetAxisRaw("Vertical");
 
-        Vector3 movementInput = new Vector3(movementX, 0f, movementZ);
+        Vector3 movementInput = new Vector3(movementX, movementY, 0);
         Vector3 movementDirection = m_playerTF.TransformDirection(movementInput).normalized;
 
         Vector3 m_Velocity = movementDirection * (m_moveSpeed * Time.deltaTime);
