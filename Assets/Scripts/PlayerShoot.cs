@@ -7,8 +7,14 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private int m_bulletDamage;
     [SerializeField] private Transform m_firePoint;
     [SerializeField] private LayerMask m_collisionLayers;
+    private Animator m_anim;
 
-    void Update()
+    private void Start()
+    {
+        m_anim = GetComponent<Animator>();
+    }
+
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -16,17 +22,19 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
-        if( Physics.Raycast(m_firePoint.position, m_firePoint.forward,out RaycastHit hit, m_collisionLayers))
+        if ( Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, Mathf.Infinity, m_collisionLayers))
         {
             hit.collider.GetComponent<Cube>().TakeDamage(m_bulletDamage,false);
             Debug.Log(hit.collider);
         }
+
+        m_anim.SetTrigger("Shoot");
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawRay(m_firePoint.position, m_firePoint.forward);
+        Gizmos.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 1000f);
     }
 }
