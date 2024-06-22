@@ -118,10 +118,10 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _VoronoiDensity: 150.6
+    - _VoronoiDensity: 150
     - _VoronoiPosterizeSteps: -80
     - _VoronoiPower: 25
-    - _VoronoiScroll: 5
+    - _VoronoiScroll: 1.9
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
