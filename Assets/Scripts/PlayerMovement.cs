@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private void InitializeSettings()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        m_playerTF.rotation = Quaternion.Euler(90f,0,0);
     }
 
     private void Update()
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         MovementControl();
     }
 
-    private float m_xRotation = -90f;
+    private float m_xRotation;
 
     private void MouseControl()
     {
