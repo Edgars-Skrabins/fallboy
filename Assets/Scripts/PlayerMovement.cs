@@ -48,9 +48,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movementInput = new Vector3(movementX, movementY, 0);
         Vector3 movementDirection = m_playerTF.TransformDirection(movementInput).normalized;
 
-        Vector3 m_Velocity = movementDirection * (m_moveSpeed * Time.deltaTime);
+        Vector3 m_Velocity = movementDirection * m_moveSpeed;
         m_Velocity.y = m_fallSpeed * -1;
 
-        m_playerCharacterController.Move(m_Velocity);
+        m_playerCharacterController.Move(m_Velocity * Time.deltaTime);
     }
 }
