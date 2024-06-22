@@ -592,38 +592,6 @@ PrefabInstance:
       propertyPath: m_playerTF
       value: 
       objectReference: {fileID: 2039384860}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnAreaX.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnAreaX.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnAreaZ.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnAreaZ.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnFrequency.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_spawnFrequency.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_randomizedSpawnHeight.x
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
-      propertyPath: m_randomizedSpawnHeight.y
-      value: 65
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -677,11 +645,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6541406814883609841, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_fallSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541406814883609841, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_moveSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7279453861257222137, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9123909586397287419, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
