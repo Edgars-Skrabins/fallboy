@@ -130,7 +130,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FireColor: {r: 0.015222349, g: 0, b: 0.18867922, a: 1}
+    - _FireColor: {r: 0.21042863, g: 0, b: 2.6082377, a: 1}
     - _Scroll: {r: 0, g: -0.013, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _VoronoiScroll: {r: 0.01, g: 0, b: 0, a: 0}

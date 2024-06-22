@@ -47,7 +47,7 @@ MonoBehaviour:
   m_cubePrefab: {fileID: 4448263211313706909, guid: 0b7afe36df262d14cb09d2e62e958e25, type: 3}
   m_spawnerTF: {fileID: 148097484724667043}
   m_playerTF: {fileID: 0}
-  m_randomizedSpawnHeight: {x: 40, y: 50}
-  m_spawnFrequency: {x: 0.5, y: 3}
-  m_spawnAreaX: {x: -4, y: 4}
-  m_spawnAreaZ: {x: -4, y: 4}
+  m_randomizedSpawnHeight: {x: 55, y: 65}
+  m_spawnFrequency: {x: 0.3, y: 1}
+  m_spawnAreaX: {x: -5, y: 5}
+  m_spawnAreaZ: {x: -5, y: 5}
