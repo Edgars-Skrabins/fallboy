@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-
+    [SerializeField] private Transform m_cubeTF;
     [SerializeField] private int m_health;
 
     private void OnTriggerEnter(Collider _collider)
