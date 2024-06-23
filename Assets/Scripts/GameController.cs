@@ -95,6 +95,9 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         m_gameStarted = false;
         m_PauseGameOverMenu.SetActive(true);
         m_resumeButton.SetActive(false);
@@ -102,9 +105,6 @@ public class GameController : MonoBehaviour
         m_menuTitleText.text = "Game Over!!";
         m_player.SetActive(false);
         m_playerScore.IsHighScore();
-
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 
     public void CameraShake()

@@ -24,6 +24,7 @@ public class Cube : MonoBehaviour
 
     private void Update()
     {
+        if (!GameController.Instance.m_gameStarted || GameController.Instance.m_gamePaused) return;
         MoveCubeForwards();
     }
 
