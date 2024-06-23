@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &227890793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 214074218749703527, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+  m_PrefabInstance: {fileID: 5660846738888320412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &289472671 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7852134868148036303, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
@@ -581,6 +586,9 @@ MonoBehaviour:
   m_retryButton: {fileID: 1208176531}
   m_playerScore: {fileID: 5660846738888320413}
   gameStarted: 0
+  m_camera: {fileID: 227890793}
+  m_shakeDuration: 0.5
+  m_shakeAmount: 0.7
 --- !u!4 &1338153666
 Transform:
   m_ObjectHideFlags: 0
@@ -910,6 +918,14 @@ PrefabInstance:
     - target: {fileID: 7279453861257222137, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299345445246532590, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299345445246532590, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.472
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

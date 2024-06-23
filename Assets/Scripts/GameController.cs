@@ -18,6 +18,12 @@ public class GameController : MonoBehaviour
 
     public bool gameStarted;
 
+    [SerializeField] private Transform m_camera;
+    [SerializeField] private float m_shakeDuration = 0.5f;
+    [SerializeField] private float m_shakeAmount = 0.7f;
+
+    private Vector3 m_originalPos;
+
     void Awake()
     {
         Instance = this;
@@ -97,7 +103,30 @@ public class GameController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
 
-        //Time.timeScale = 0;
+    public void CameraShake()
+    {
+        m_originalPos = m_camera.transform.localPosition;
+        StartCoroutine(Shake());
+    }
+
+    private IEnumerator Shake()
+    {
+        float elapsed = 0.0f;
+
+        while (elapsed < m_shakeDuration)
+        {
+            float offsetX = Random.Range(-m_shakeAmount, m_shakeAmount);
+            float offsetY = Random.Range(-m_shakeAmount, m_shakeAmount);
+
+            m_camera.transform.localPosition = m_originalPos + new Vector3(offsetX, offsetY, 0);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        m_camera.transform.localPosition = m_originalPos;
     }
 }
