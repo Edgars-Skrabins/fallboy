@@ -37,7 +37,8 @@ public class Cube : MonoBehaviour
         {
             // Add score
         }
-
+        m_cubeTF.parent = null;
+        m_cubeTF.gameObject.SetActive(true);
         Destroy(gameObject);
     }
 

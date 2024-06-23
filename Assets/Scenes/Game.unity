@@ -820,11 +820,11 @@ PrefabInstance:
       objectReference: {fileID: 2039384860}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnAreaX.x
-      value: -15
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnAreaX.y
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnAreaZ.x
@@ -836,11 +836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnFrequency.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnFrequency.y
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
