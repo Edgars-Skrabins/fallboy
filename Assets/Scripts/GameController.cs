@@ -100,6 +100,7 @@ public class GameController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        m_crosshairGO.SetActive(false);
 
         m_gameStarted = false;
         m_PauseGameOverMenu.SetActive(true);
