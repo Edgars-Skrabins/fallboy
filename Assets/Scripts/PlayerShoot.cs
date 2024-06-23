@@ -7,23 +7,17 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private int m_bulletDamage = 1;
     [SerializeField] private LayerMask m_collisionLayers;
     [SerializeField] private Transform m_firePoint;
-    [SerializeField] private float m_lineDuration = 0.1f;
 
     [SerializeField] private AudioClip m_shotAudioClip;
 
     private AudioSource m_audioSource;
     private Animator m_anim;
-    private LineRenderer m_line;
 
     private void Start()
     {
         m_audioSource = GetComponent<AudioSource>();
         m_anim = GetComponent<Animator>();
-        m_line = gameObject.AddComponent<LineRenderer>();
-        m_line.positionCount = 2;
-        m_line.startWidth = 0.05f;
-        m_line.endWidth = 0.05f;
-        m_line.enabled = false;
+
     }
 
     private void Update()
@@ -44,11 +38,6 @@ public class PlayerShoot : MonoBehaviour
         {
             GameController.Instance.CameraShake();
             hit.collider.GetComponent<Cube>().TakeDamage(m_bulletDamage,true);
-            StartCoroutine(ShowLineCo(m_firePoint.position, hit.point));
-        }
-        else
-        {
-            StartCoroutine(ShowLineCo(m_firePoint.position, m_firePoint.position + m_firePoint.forward * 1000f));
         }
         PlayShotFiredSFX();
     }
@@ -68,14 +57,4 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    private IEnumerator ShowLineCo(Vector3 start, Vector3 end)
-    {
-        m_line.SetPosition(0, start);
-        m_line.SetPosition(1, end);
-        m_line.enabled = true;
-
-        yield return new WaitForSeconds(m_lineDuration);
-
-        m_line.enabled = false;
-    }
 }

@@ -224,7 +224,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.19819832, b: 1, a: 1}
+      maxColor: {r: 0, g: 0.50304985, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5150,7 +5150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3530aba7e5c1167469eedf7b9384c365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scoreValue: 200
+  m_scoreValue: 800
   m_animationName: CubeShrink_Fast
   m_cubeTF: {fileID: 5169307768172874056}
   m_health: 2

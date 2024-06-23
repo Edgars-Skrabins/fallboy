@@ -158,7 +158,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - Color_e2229bc123e44e16acc0cd209d3999a9: {r: 26.867924, g: 24.434895, b: 0, a: 1}
+    - Color_e2229bc123e44e16acc0cd209d3999a9: {r: 63.999996, g: 54.421173, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
