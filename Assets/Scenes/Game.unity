@@ -780,7 +780,8 @@ MonoBehaviour:
   m_resumeButton: {fileID: 5660846738888320415}
   m_retryButton: {fileID: 5660846738888320414}
   m_playerScore: {fileID: 5660846738888320413}
-  gameStarted: 0
+  m_gameStarted: 0
+  m_gamePaused: 0
   m_camera: {fileID: 227890793}
   m_shakeDuration: 0.13
   m_shakeAmount: 0.21
@@ -1367,6 +1368,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2013733490265890503, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2259673302461097644, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1527,7 +1532,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitApplication
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5146782477396381813, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7451415729956694684, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
     - {fileID: 6590577655911636022, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
