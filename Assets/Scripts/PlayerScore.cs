@@ -30,7 +30,10 @@ public class PlayerScore : MonoBehaviour
 
     private void Start()
     {
-        m_highscoreText.text = GetHighscore().ToString();
+        if (m_highscoreText)
+        {
+            m_highscoreText.text = GetHighscore().ToString();
+        }
     }
 
     private void Update()
