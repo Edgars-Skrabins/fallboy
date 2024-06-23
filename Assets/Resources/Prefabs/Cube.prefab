@@ -165,10 +165,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3530aba7e5c1167469eedf7b9384c365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_scoreValue: 100
+  m_animationName: CubeShrink
   m_cubeTF: {fileID: 6692265039643933967}
   m_health: 1
   m_audioSource: {fileID: 8545613348516677467}
   m_animation: {fileID: 1168884920479780176}
+  m_forwardSpeed: 0
 --- !u!1001 &8444041703776742947
 PrefabInstance:
   m_ObjectHideFlags: 0
