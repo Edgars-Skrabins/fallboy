@@ -1114,6 +1114,7 @@ MonoBehaviour:
   m_camera: {fileID: 227890793}
   m_shakeDuration: 0.13
   m_shakeAmount: 0.21
+  m_crosshairGO: {fileID: 1951658094}
 --- !u!4 &1338153666
 Transform:
   m_ObjectHideFlags: 0
@@ -1629,6 +1630,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
+--- !u!1 &1951658094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6892713844366975515, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+  m_PrefabInstance: {fileID: 5660846738888320412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2039384860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4890558109591256146, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
@@ -1901,6 +1907,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2246245207063464895, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2259673302461097644, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2016,6 +2026,10 @@ PrefabInstance:
     - target: {fileID: 5917276366041355315, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_highscoreText
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892713844366975515, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7150529368116955593, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

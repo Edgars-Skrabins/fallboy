@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Transform m_camera;
     [SerializeField] private float m_shakeDuration = 0.5f;
     [SerializeField] private float m_shakeAmount = 0.7f;
+    [SerializeField] private GameObject m_crosshairGO;
 
     private Vector3 m_originalPos;
 
@@ -70,6 +71,7 @@ public class GameController : MonoBehaviour
         Cursor.visible = true;
         m_PauseGameOverMenu.SetActive(true);
         Time.timeScale = 0;
+        m_crosshairGO.SetActive(false);
     }
 
     public void UnpauseGame()
@@ -79,6 +81,7 @@ public class GameController : MonoBehaviour
         Cursor.visible = false;
         m_PauseGameOverMenu.SetActive(false);
         Time.timeScale = 1;
+        m_crosshairGO.SetActive(true);
     }
 
     public void ReturnToMainMenu()
