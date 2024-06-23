@@ -816,7 +816,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Edgars Skrabi\u0146\u0161 - Programmer & VFX Artist \nChirag Agarwal -
-    Programmer\nBen Moss - Gun model"
+    Programmer\nBen Moss - Gun model\nKristians Tavars - Crosshair"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f94916b1949834a41aa00cf25238f54d, type: 2}
   m_sharedMaterial: {fileID: 4564511272347537040, guid: f94916b1949834a41aa00cf25238f54d, type: 2}
