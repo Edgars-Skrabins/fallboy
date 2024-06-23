@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private PlayerScore m_playerScore;
 
-    public bool gameStarted;
+    public bool m_gameStarted,m_gamePaused;
 
     [SerializeField] private Transform m_camera;
     [SerializeField] private float m_shakeDuration = 0.5f;
@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (!gameStarted) return;
+        if (!m_gameStarted) return;
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour
 
     void StartGame()
     {
-        gameStarted = true;
+        m_gameStarted = true;
         Time.timeScale = 1;
         m_menuTitleText.text = "Paused!!";
         m_player.SetActive(true);
@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour
 
     void PauseGame()
     {
+        m_gamePaused = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         m_PauseGameOverMenu.SetActive(true);
@@ -73,6 +74,7 @@ public class GameController : MonoBehaviour
 
     public void UnpauseGame()
     {
+        m_gamePaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         m_PauseGameOverMenu.SetActive(false);
@@ -93,7 +95,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
-        gameStarted = false;
+        m_gameStarted = false;
         m_PauseGameOverMenu.SetActive(true);
         m_resumeButton.SetActive(false);
         m_retryButton.SetActive(true);
@@ -128,5 +130,10 @@ public class GameController : MonoBehaviour
         }
 
         m_camera.transform.localPosition = m_originalPos;
+    }
+
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
