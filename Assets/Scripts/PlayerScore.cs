@@ -14,8 +14,15 @@ public class PlayerScore : MonoBehaviour
 
     private float m_score;
 
+    private void Start()
+    {
+        m_highscoreText.text = GetHighscore().ToString();
+    }
+
     private void Update()
     {
+        if (GameController.Instance.gameStarted == false) return;
+
         UpdateScore();
         IsHighScore();
     }
@@ -36,6 +43,12 @@ public class PlayerScore : MonoBehaviour
     public float GetScore()
     {
         return m_score;
+    }
+
+    public int GetHighscore()
+    {
+        int highscore = PlayerPrefs.GetInt(m_HIGHSCORE_PREF, 0);
+        return highscore;
     }
 
     public bool IsHighScore()
