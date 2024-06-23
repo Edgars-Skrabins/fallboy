@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
+    public static PlayerScore I;
+
     const string m_HIGHSCORE_PREF = "Highscore";
 
     [SerializeField] private TMP_Text m_scoreText;
@@ -13,6 +15,18 @@ public class PlayerScore : MonoBehaviour
     [SerializeField] private float m_scoreIncreaseSpeed;
 
     private float m_score;
+
+    private void Awake()
+    {
+        if (I == null)
+        {
+            I = this;
+        }
+        else if (I != null && I != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -43,6 +57,12 @@ public class PlayerScore : MonoBehaviour
     public float GetScore()
     {
         return m_score;
+    }
+
+    public void AddScore(int _score)
+    {
+        m_score += _score;
+        m_scoreText.text = m_score.ToString("F0");
     }
 
     public int GetHighscore()

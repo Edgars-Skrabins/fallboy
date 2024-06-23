@@ -43,7 +43,7 @@ public class PlayerShoot : MonoBehaviour
         if ( Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, m_collisionLayers))
         {
             GameController.Instance.CameraShake();
-            hit.collider.GetComponent<Cube>().TakeDamage(m_bulletDamage,false);
+            hit.collider.GetComponent<Cube>().TakeDamage(m_bulletDamage,true);
             StartCoroutine(ShowLineCo(m_firePoint.position, hit.point));
         }
         else

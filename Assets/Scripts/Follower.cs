@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Follower : MonoBehaviour
 {
-    [SerializeField] Transform m_followTarget;
+    [SerializeField] private Transform  m_followTarget;
+    [SerializeField] private Vector3 m_offset;
 
     void LateUpdate()
     {
-        transform.position = m_followTarget.position;
+        transform.position = m_followTarget.position + m_offset;
     }
 }
