@@ -15,6 +15,8 @@ public class CubeSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (GameController.Instance.gameStarted == false) return;
+
         CountSpawnTimer();
         UpdateSpawnerPosition();
     }

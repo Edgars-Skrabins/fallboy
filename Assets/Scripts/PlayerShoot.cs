@@ -15,6 +15,8 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
+        if (GameController.Instance.gameStarted == false) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();
@@ -32,8 +34,11 @@ public class PlayerShoot : MonoBehaviour
         m_anim.SetTrigger("Shoot");
     }
 
-    private void OnDrawGizmos()
+    private void OnTriggerEnter(Collider _other)
     {
-        Gizmos.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 1000f);
+        if (_other.CompareTag("Finish"))
+        {
+            GameController.Instance.GameOver();
+        }
     }
 }

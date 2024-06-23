@@ -14,6 +14,12 @@ public class Cube : MonoBehaviour
         {
             TakeDamage(1000, false);
         }
+
+        if (_collider.CompareTag("Destroyer"))
+        {
+            Debug.Log("Cube Destroyed: " + name);
+            Destroy(gameObject);
+        }
     }
 
     public void TakeDamage(int _damage, bool _addScore)
