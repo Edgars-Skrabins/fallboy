@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private void InitializeSettings()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         m_playerTF.rotation = Quaternion.Euler(90f,0,0);
     }
 
