@@ -1738,11 +1738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnFrequency.x
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnFrequency.y
-      value: 0.8
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_randomizedSpawnHeight.x

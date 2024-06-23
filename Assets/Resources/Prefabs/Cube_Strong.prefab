@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3530aba7e5c1167469eedf7b9384c365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scoreValue: 300
+  m_scoreValue: 500
   m_animationName: CubeShrink_Strong
   m_cubeTF: {fileID: 2270880954315638927}
   m_health: 3
