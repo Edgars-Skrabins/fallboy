@@ -1014,9 +1014,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8211e456756413243952d0aaeb293f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 15
+  m_moveSpeed: 20
   m_mouseSensitivity: 15
-  m_fallSpeed: 0.5
+  m_fallSpeed: 45
   m_playerCharacterController: {fileID: 3484761364326066386}
   m_playerTF: {fileID: 4890558109591256146}
   m_cameraTF: {fileID: 214074218749703527}
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a21e7622b1a5409294d80c31e944427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_bulletDamage: 0
+  m_bulletDamage: 1
   m_firePoint: {fileID: 0}
   m_collisionLayers:
     serializedVersion: 2

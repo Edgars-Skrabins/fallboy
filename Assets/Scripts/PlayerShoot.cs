@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    [SerializeField] private int m_bulletDamage;
-    [SerializeField] private Transform m_firePoint;
+    [SerializeField] private int m_bulletDamage = 1;
     [SerializeField] private LayerMask m_collisionLayers;
     private Animator m_anim;
 
