@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cubeTF: {fileID: 6692265039643933967}
   m_health: 1
+  m_audioSource: {fileID: 8545613348516677467}
 --- !u!1001 &8444041703776742947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,5 +231,10 @@ PrefabInstance:
 --- !u!4 &6692265039643933967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3022179955393925932, guid: f886f692e096a4ebeb965b94b0fe9f59, type: 3}
+  m_PrefabInstance: {fileID: 8444041703776742947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8545613348516677467 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 267785097894046072, guid: f886f692e096a4ebeb965b94b0fe9f59, type: 3}
   m_PrefabInstance: {fileID: 8444041703776742947}
   m_PrefabAsset: {fileID: 0}

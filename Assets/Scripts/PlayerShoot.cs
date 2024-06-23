@@ -8,11 +8,16 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private LayerMask m_collisionLayers;
     [SerializeField] private Transform m_firePoint;
     [SerializeField] private float m_lineDuration = 0.1f;
+
+    [SerializeField] private AudioClip m_shotAudioClip;
+
+    private AudioSource m_audioSource;
     private Animator m_anim;
     private LineRenderer m_line;
 
     private void Start()
     {
+        m_audioSource = GetComponent<AudioSource>();
         m_anim = GetComponent<Animator>();
         m_line = gameObject.AddComponent<LineRenderer>();
         m_line.positionCount = 2;
@@ -40,12 +45,18 @@ public class PlayerShoot : MonoBehaviour
             GameController.Instance.CameraShake();
             hit.collider.GetComponent<Cube>().TakeDamage(m_bulletDamage,false);
             StartCoroutine(ShowLineCo(m_firePoint.position, hit.point));
-            Debug.Log(hit.collider);
         }
         else
         {
             StartCoroutine(ShowLineCo(m_firePoint.position, m_firePoint.position + m_firePoint.forward * 1000f));
         }
+        PlayShotFiredSFX();
+    }
+
+    private void PlayShotFiredSFX()
+    {
+        m_audioSource.pitch = Random.Range(.9f, 1.25f);
+        m_audioSource.PlayOneShot(m_shotAudioClip);
     }
 
     private void OnTriggerEnter(Collider _other)

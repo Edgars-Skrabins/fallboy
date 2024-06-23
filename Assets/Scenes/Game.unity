@@ -848,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569130395733342585, guid: 6ae494f619215204eb91e0d6ff653eb8, type: 3}
       propertyPath: m_spawnFrequency.y
-      value: 0.025
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -918,14 +918,6 @@ PrefabInstance:
     - target: {fileID: 7279453861257222137, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8299345445246532590, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 8299345445246532590, guid: 57225a0742530aa45962235a47f8b0cd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.472
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
